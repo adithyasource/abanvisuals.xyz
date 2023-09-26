@@ -8,6 +8,9 @@ dependencies:
   lite-youtube-embed:
     specifier: ^0.2.0
     version: 0.2.0
+  mailgo:
+    specifier: ^0.12.2
+    version: 0.12.2
   vue-lite-youtube-embed:
     specifier: ^1.2.0
     version: 1.2.0(vue@3.3.4)
@@ -4473,6 +4476,11 @@ packages:
       '@babel/types': 7.23.0
       source-map-js: 1.0.2
     dev: true
+
+  /mailgo@0.12.2:
+    resolution: {integrity: sha512-iX4F3eOhPJ+12YlM51UNV8yTYwxHywaGP1C9Qaep/iNP2ZS+xzqHR7U3o+7HoCL19gZKysc7+MwgBEiRy8ogzA==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+    dev: false
 
   /make-dir@3.1.0:
     resolution: {integrity: sha512-g3FeP20LNwhALb/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J/fiSf1sa1ADhXqi5+oVwOM/eGw==}

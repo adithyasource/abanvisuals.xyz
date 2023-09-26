@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "lite-youtube-embed": "^0.2.0",
+    "mailgo": "^0.12.2",
     "vue-lite-youtube-embed": "^1.2.0"
   }
 }

@@ -12,6 +12,9 @@ export default {
             spaceMono: "Space Mono",
             monument: "Monument",
           },
+          boxShadow: {
+            "3xl": "10px 9px 400px 200px rgba(0,0,0,0.83)",
+          },
         },
       },
     },
