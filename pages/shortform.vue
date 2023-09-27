@@ -1,38 +1,74 @@
 <script setup>
 const videos = await $fetch("https://api.npoint.io/4ee561ce6a19270877ac");
+const windowWidth = ref(window.innerWidth);
+
+const desktopWindow = ref(window.innerWidth > 1000);
+
+function onWidthChange() {
+  windowWidth.value = window.innerWidth;
+  desktopWindow.value = window.innerWidth > 1000;
+}
+
+onMounted(() => {
+  window.addEventListener("resize", onWidthChange);
+  window.addEventListener("load", () => {
+    onWidthChange();
+  });
+});
+onUnmounted(() => {
+  window.removeEventListener("resize", onWidthChange);
+  window.removeEventListener("load", onWidthChange);
+});
 </script>
 
 <template>
   <div
-    class="w-[80vw] h-[80%] overflow-y-auto text-white items-center flex flex-col gap-10 mt-14">
-    <div class="grid grid-cols-3 gap-10 relative">
-      <div v-for="video in videos" class="group relative hover:z-30">
-        <div class="rounded-xl overflow-hidden relative">
-          <a :href="video[0]" target="_blank"
-            ><img :src="video[2]" class="w-[20vw] h-[35.56vw]" alt=""
-          /></a>
+    class="w-[80vw] h-[80%] text-white flex-col gap-10 overflow-y-auto mt-14">
+    <div class="text-white items-center flex flex-col gap-10">
+      <div class="videos gap-10 relative">
+        <div v-for="video in videos" class="group hover:z-10">
+          <div class="rounded-xl overflow-hidden relative">
+            <a :href="video[0]" target="_blank"
+              ><img :src="video[2]" class="video w-[20vw] h-[35.56vw]" alt=""
+            /></a>
+          </div>
+          <div v-if="desktopWindow">
+            <div
+              class="cardDetails w-[20vw] bg-[#181818] p-4 -z-10 rounded-b-xl absolute max-[1000px]:relative opacity-0 translate-y-[-100%] group-hover:translate-y-[-10px] group-hover:opacity-100 group-hover:transition-all transition-opacity group-hover:duration-300"
+              v-if="video[1] != ''">
+              <p>{{ video[1] }}</p>
+            </div>
+            <br />
+          </div>
+          <div v-else>
+            <div
+              class="cardDetails bg-[#181818] p-4 rounded-b-xl absolute max-[1000px]:relative w-[20vw] max-[1000px]:w-[75vw] translate-y-[-10px] group-hover:duration-300"
+              v-if="video[1] != ''">
+              <p>{{ video[1] }}</p>
+            </div>
+          </div>
         </div>
-
-        <div
-          class="cardDetails w-[20vw] bg-[#181818] p-4 rounded-b-xl absolute opacity-0 translate-y-[-100%] group-hover:translate-y-[-10px] group-hover:opacity-100 group-hover:transition-all transition-opacity group-hover:duration-300"
-          v-if="video[1] != ''">
-          <p>{{ video[1] }}</p>
-        </div>
+        <br />
       </div>
     </div>
   </div>
 </template>
 
-<style>
-.grid-cols-2 > .group {
-  position: relative;
+<style scoped>
+.videos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.rounded-xl.overflow-hidden iframe {
-  z-index: 2;
-}
+@media only screen and (max-width: 1000px) {
+  .videos {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 
-.rounded-xl.overflow-hidden {
-  z-index: 10;
+  .video {
+    width: 75vw;
+    height: auto;
+  }
 }
 </style>
