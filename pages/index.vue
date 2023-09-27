@@ -11,7 +11,7 @@ async function copyEmail() {
 
 <template>
   <div
-    class="text-white items-center justify-center w-[50vw] h-[80%] flex gap-10">
+    class="text-white items-center justify-center w-[50vw] h-[80%] flex gap-10 mt-14">
     <img :src="'image 12.png'" alt="" class="w-50 h-50 rounded-full" />
     <div>
       <p

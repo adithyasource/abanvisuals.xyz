@@ -4,7 +4,7 @@ const videos = await $fetch("https://api.npoint.io/2c873d27b87e9faa61d5");
 
 <template>
   <div
-    class="w-[80vw] h-[80%] overflow-y-auto text-white items-center flex flex-col gap-10">
+    class="w-[80vw] h-[80%] overflow-y-auto text-white items-center flex flex-col gap-10 mt-14">
     <div class="grid grid-cols-2 gap-10 relative">
       <div v-for="video in videos" class="group relative hover:z-30">
         <div class="rounded-xl overflow-hidden">
