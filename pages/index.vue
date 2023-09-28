@@ -3,9 +3,10 @@ import mailgo from "mailgo";
 
 mailgo({ dark: true });
 
-async function copyEmail() {
-  await navigator.clipboard.writeText("aban0807");
+function copyEmail() {
+  navigator.clipboard.writeText("aban0807");
   alert("Discord Username Copied!");
+  window.open("https://discord.com/users/971036705937326182");
 }
 </script>
 
@@ -13,9 +14,9 @@ async function copyEmail() {
   <div
     class="text-white items-center justify-center w-[50vw] h-[80%] flex flex-row gap-10 mt-14 max-[1000px]:flex-col">
     <img
-      :src="'image 12.png'"
+      :src="'profile picture.png'"
       alt=""
-      class="w-50 h-50 rounded-full max-[1000px]:w-44 max-[1000px]:h-44" />
+      class="w-[280px] h-[280px] rounded-full max-[1000px]:w-44 max-[1000px]:h-44" />
     <div class="max-[1000px]:items-center flex flex-col">
       <p
         class="max-[1000px]:text-[25px] max-[1000px]:w-min max-[1000px]:text-center font-monument tracking-wider text-[44px] w-max text-transparent bg-clip-text bg-gradient-to-b from-[#40EE97] to-[#3AF5C2]">
@@ -28,9 +29,7 @@ async function copyEmail() {
       <br />
       <div
         class="flex gap-8 max-[1000px]:text-sm max-[1000px]:grid max-[1000px]:grid-cols-2">
-        <div
-          class="flex flex-row gap-2 cursor-pointer"
-          @click.self.prevent="copyEmail">
+        <div class="flex flex-row gap-2 cursor-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -38,9 +37,10 @@ async function copyEmail() {
             fill="#ffffff"
             viewBox="0 0 256 256">
             <path
+              @click.self.prevent="copyEmail"
               d="M104,140a12,12,0,1,1-12-12A12,12,0,0,1,104,140Zm60-12a12,12,0,1,0,12,12A12,12,0,0,0,164,128Zm74.45,64.9-67,29.71a16.17,16.17,0,0,1-21.71-9.1l-8.11-22q-6.72.45-13.63.46t-13.63-.46l-8.11,22a16.18,16.18,0,0,1-21.71,9.1l-67-29.71a15.93,15.93,0,0,1-9.06-18.51L38,58A16.07,16.07,0,0,1,51,46.14l36.06-5.93a16.22,16.22,0,0,1,18.26,11.88l3.26,12.84Q118.11,64,128,64t19.4.93l3.26-12.84a16.21,16.21,0,0,1,18.26-11.88L205,46.14A16.07,16.07,0,0,1,218,58l29.53,116.38A15.93,15.93,0,0,1,238.45,192.9ZM232,178.28,202.47,62s0,0-.08,0L166.33,56a.17.17,0,0,0-.17,0l-2.83,11.14c5,.94,10,2.06,14.83,3.42A8,8,0,0,1,176,86.31a8.09,8.09,0,0,1-2.16-.3A172.25,172.25,0,0,0,128,80a172.25,172.25,0,0,0-45.84,6,8,8,0,1,1-4.32-15.4c4.82-1.36,9.78-2.48,14.82-3.42L89.83,56s0,0-.12,0h0L53.61,61.93a.17.17,0,0,0-.09,0L24,178.33,91,208a.23.23,0,0,0,.22,0L98,189.72a173.2,173.2,0,0,1-20.14-4.32A8,8,0,0,1,82.16,170,171.85,171.85,0,0,0,128,176a171.85,171.85,0,0,0,45.84-6,8,8,0,0,1,4.32,15.41A173.2,173.2,0,0,1,158,189.72L164.75,208a.22.22,0,0,0,.21,0Z"></path>
           </svg>
-          <p class="socialButton">Discord</p>
+          <p class="socialButton" @click.self.prevent="copyEmail">Discord</p>
         </div>
         <a href="https://www.instagram.com/mohammed_aban777/" target="_blank">
           <div class="flex flex-row gap-2 cursor-pointer">
@@ -56,7 +56,7 @@ async function copyEmail() {
             <p class="socialButton">Instagram</p>
           </div>
         </a>
-        <a href="https://twitter.com/fushavillage/" target="_blank">
+        <a href="https://twitter.com/Aban_777" target="_blank">
           <div class="flex flex-row gap-2 cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -70,9 +70,7 @@ async function copyEmail() {
             <p class="socialButton">Twitter</p>
           </div>
         </a>
-        <a
-          href="mailto:fushavillage382@gmail.com
-        ">
+        <a href="mailto:mohammedaban777@gmail.com">
           <div class="flex flex-row gap-2 cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
