@@ -2,7 +2,7 @@
 const showreel =
   "https://www.youtube-nocookie.com/embed/" +
   (
-    await $fetch("https://api.npoint.io/db11c3e202c19601633e")
+    await $fetch("https://api.npoint.io/2ab65d1373696dc7d9d0")
   ).showReelLink.match(/[?&]v=([^&]+)/)[1];
 </script>
 

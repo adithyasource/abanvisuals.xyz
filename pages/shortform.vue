@@ -1,5 +1,5 @@
 <script setup>
-const videos = await $fetch("https://api.npoint.io/4ee561ce6a19270877ac");
+const videos = await $fetch("https://api.npoint.io/8619bd1a5b4d59f26bb0");
 const windowWidth = ref(window.innerWidth);
 
 const desktopWindow = ref(window.innerWidth > 1000);
