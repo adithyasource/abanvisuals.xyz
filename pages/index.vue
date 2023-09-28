@@ -12,7 +12,7 @@ function copyEmail() {
 
 <template>
   <div
-    class="text-white items-center justify-center w-[50vw] h-[80%] flex flex-row gap-10 mt-14 max-[1000px]:flex-col">
+    class="text-white items-center justify-center w-[50vw] h-[80%] flex flex-row gap-10 mt-14 max-[1000px]:flex-col max-[1000px]:mt-0">
     <img
       :src="'profile picture.png'"
       alt=""
