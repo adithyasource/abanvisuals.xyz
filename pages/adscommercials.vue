@@ -23,7 +23,7 @@ onUnmounted(() => {
 
 <template>
   <div
-    class="w-[80vw] h-[80%] text-white flex-col gap-10 overflow-y-auto mt-14 max-[1000px]:mt-0">
+    class="w-[80vw] h-[80%] text-white flex-col gap-10 overflow-y-auto mt-14 max-[1000px]:h-[75%]">
     <div class="text-white items-center flex flex-col gap-10">
       <div class="videos gap-10 relative">
         <div v-for="video in videos" class="group hover:z-10">
