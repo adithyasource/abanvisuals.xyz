@@ -9,7 +9,7 @@ export default {
       theme: {
         extend: {
           fontFamily: {
-            spaceMono: "Space Mono",
+            spaceMono: "Sora",
             monument: "Monument",
           },
           boxShadow: {
@@ -19,5 +19,16 @@ export default {
       },
     },
   },
-  app: { pageTransition: { name: "page", mode: "out-in" } },
+  app: {
+    pageTransition: { name: "page", mode: "out-in" },
+    head: {
+      title: "Aban's Portfolio",
+      ogTitle: "Aban's Portfolio",
+      description: "Edit Portfolio + Links",
+      ogDescription: "Edit Portfolio + Links",
+      charset: "utf-8",
+      viewport: "width=device-width, initial-scale=1",
+      ogImage: "/public/share.jpg",
+    },
+  },
 };
