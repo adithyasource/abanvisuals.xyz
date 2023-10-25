@@ -24,10 +24,10 @@ onUnmounted(() => {
 <template>
   <div
     class="w-[80vw] h-[80%] text-white flex-col gap-10 overflow-y-auto mt-14 max-[1000px]:h-[70%] max-[1000px]:mt-12">
-    <div class="text-white items-center flex flex-col gap-10">
-      <div class="videos gap-10 relative">
+    <div class="flex flex-col items-center gap-10 text-white">
+      <div class="relative gap-10 videos">
         <div v-for="video in videos" class="group hover:z-10">
-          <div class="rounded-xl overflow-hidden">
+          <div class="overflow-hidden rounded-xl">
             <iframe
               class="video w-[35vw] h-[19.69vw] relative"
               :src="

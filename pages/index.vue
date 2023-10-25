@@ -18,18 +18,17 @@ function copyEmail() {
       alt=""
       class="w-[280px] h-[280px] rounded-full max-[1000px]:w-44 max-[1000px]:h-44" />
     <div class="max-[1000px]:items-center flex flex-col">
+      <img src="logo.svg" alt="" />
+
       <p
-        class="max-[1000px]:text-[25px] max-[1000px]:w-min max-[1000px]:text-center font-monument tracking-wider text-[44px] w-max text-transparent bg-clip-text bg-gradient-to-b from-[#40EE97] to-[#3AF5C2]">
-        MOHAMMED ABAN
-      </p>
-      <p class="max-[1000px]:text-sm max-[1000px]:w-[80vw] max-[1000px]:pt-3">
+        class="max-[1000px]:text-sm max-[1000px]:w-[80vw] max-[1000px]:pt-3 pt-5">
         I help creators and brands convert their vision to a highly valued
         personal brand and ultimately make them sales since 2021.
       </p>
       <br />
       <div
         class="flex gap-8 max-[1000px]:text-sm max-[1000px]:grid max-[1000px]:grid-cols-2">
-        <div class="socialButton flex flex-row gap-2 cursor-pointer">
+        <div class="flex flex-row gap-2 cursor-pointer socialButton">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -43,7 +42,7 @@ function copyEmail() {
           <p @click.self.prevent="copyEmail">Discord</p>
         </div>
         <a href="https://www.instagram.com/mohammed_aban777/" target="_blank">
-          <div class="socialButton flex flex-row gap-2 cursor-pointer">
+          <div class="flex flex-row gap-2 cursor-pointer socialButton">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -57,7 +56,7 @@ function copyEmail() {
           </div>
         </a>
         <a href="https://twitter.com/Aban_777" target="_blank">
-          <div class="socialButton flex flex-row gap-2 cursor-pointer">
+          <div class="flex flex-row gap-2 cursor-pointer socialButton">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -71,7 +70,7 @@ function copyEmail() {
           </div>
         </a>
         <a href="mailto:mohammedaban777@gmail.com">
-          <div class="socialButton flex flex-row gap-2 cursor-pointer">
+          <div class="flex flex-row gap-2 cursor-pointer socialButton">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
