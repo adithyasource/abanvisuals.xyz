@@ -18,7 +18,7 @@ function copyEmail() {
       alt=""
       class="w-[280px] h-[280px] rounded-full max-[1000px]:w-44 max-[1000px]:h-44" />
     <div class="max-[1000px]:items-center flex flex-col">
-      <img src="logo.svg" alt="" />
+      <img :src="'logo.svg'" alt="" />
 
       <p
         class="max-[1000px]:text-sm max-[1000px]:w-[80vw] max-[1000px]:pt-3 pt-5">
