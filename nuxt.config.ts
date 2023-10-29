@@ -29,6 +29,12 @@ export default {
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
       ogImage: "/public/share.jpg",
+      script: [
+        {
+          src: "https://cdn.counter.dev/script.js",
+          "data-id": "0521abe9-1964-4911-b18c-f0500433630f",
+        },
+      ],
     },
   },
 };

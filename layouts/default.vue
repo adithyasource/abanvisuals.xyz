@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen flex justify-center">
+  <div class="flex justify-center h-screen">
     <slot />
     <div
       class="absolute bottom-10 max-[1000px]:text-sm overflow-x-scroll scrollbar-hide">
