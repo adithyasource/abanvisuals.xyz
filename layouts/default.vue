@@ -14,13 +14,6 @@
         <div class="flex flex-col gap-2 group">
           <NuxtLink
             class="transition-colors max-[1000px]:w-max border border-[#3A3A3A] border-t-1.5 border-l-0 border-r-0 border-b-0 bg-gradient-to-b from-[#0F0F0F] to-black py-1.5 px-3 rounded-md hover:bg-gradient-to-b hover:from-[#161616] hover:to-[#080808]"
-            to="/showreel"
-            >Showreel</NuxtLink
-          >
-        </div>
-        <div class="flex flex-col gap-2 group">
-          <NuxtLink
-            class="transition-colors max-[1000px]:w-max border border-[#3A3A3A] border-t-1.5 border-l-0 border-r-0 border-b-0 bg-gradient-to-b from-[#0F0F0F] to-black py-1.5 px-3 rounded-md hover:bg-gradient-to-b hover:from-[#161616] hover:to-[#080808]"
             to="/adscommercials"
             >Ads/Commercial</NuxtLink
           >
