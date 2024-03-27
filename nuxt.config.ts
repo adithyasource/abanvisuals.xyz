@@ -19,6 +19,10 @@ export default {
       },
     },
   },
+  plugins: [{ src: `plugins/vimeo-player` }],
+  build: {
+    vendor: ["vue-vimeo-player"],
+  },
   app: {
     pageTransition: { name: "page", mode: "out-in" },
     head: {
