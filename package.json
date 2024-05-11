@@ -19,6 +19,5 @@
   },
   "type": "module",
   "dependencies": {
-    "mailgo": "^0.12.2"
   }
 }
