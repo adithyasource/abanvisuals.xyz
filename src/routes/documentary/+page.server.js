@@ -6,11 +6,7 @@ let videos
 
 let videosWithViews = {}
 
-
-
-// https://api.npoint.io/7d15dcc6d912342c2681
-// https://api.npoint.io/18b19d10e2ff5329e5b5
-await fetch("https://api.npoint.io/7d15dcc6d912342c2681").then(async (response) => {
+await fetch("https://api.npoint.io/18b19d10e2ff5329e5b5").then(async (response) => {
   response.json().then(async (data) => {
     videos = data;
 
