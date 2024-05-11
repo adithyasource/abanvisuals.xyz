@@ -54,6 +54,13 @@
           >
             Docu
           </a>
+          <a
+            class="group-hover:opacity-100 max-[1000px]:hidden max-[1000px]:group-hover:block max-[1000px]:transition-none max-[1000px]:w-max transition-opacity opacity-0 duration-100 border border-[#3A3A3A] border-t-1.5 border-l-0 border-r-0 border-b-0 bg-gradient-to-b from-[#0F0F0F] to-black py-1.5 px-3 rounded-md hover:bg-gradient-to-b hover:from-[#161616] hover:to-[#080808]"
+            href="/podcasts"
+            style="z-index: 100"
+          >
+           Podcasts 
+          </a>
           <p
             class="transition-colors max-[1000px]:w-max cursor-pointer border border-[#3A3A3A] border-t-1.5 border-l-0 border-r-0 border-b-0 bg-gradient-to-b from-[#0F0F0F] to-black py-1.5 px-3 rounded-md hover:bg-gradient-to-b hover:from-[#161616] hover:to-[#080808]"
             style="z-index: 100"
