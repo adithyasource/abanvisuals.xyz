@@ -6,7 +6,7 @@ let videos
 let videosWithViews = {}
 
 export async function load() {
-  await fetch("https://api.npoint.io/18b19d10e2ff5329e5b5").then(async (response) => {
+  await fetch("https://api.npoint.io/559d966849b3dab34f3f").then(async (response) => {
     response.json().then(async (data) => {
       videos = data;
 
