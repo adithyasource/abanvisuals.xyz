@@ -65,7 +65,7 @@
                   <div
                     class="font-bold text-xl relative top-0 pt-1 pb-2 h-auto flex bg-gradient-to-b items-center from-[#FF7200] to-[#FF7200] bg-clip-text text-transparent"
                   >
-                    {#if parseInt(video[3]) > 1000}
+                    {#if parseInt(video[3]) > 100}
                       {formatNumberWithCommas(video[3])} views
                     {/if}
                   </div>
