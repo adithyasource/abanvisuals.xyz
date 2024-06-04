@@ -38,8 +38,7 @@
 </script>
 
 <div
-  class="w-[80vw] h-[80%] text-white flex-col gap-10 overflow-y-auto mt-14 max-[1000px]:h-[70%] max-[1000px]:mt-12"
->
+  class="w-[80vw] h-[80%] text-white flex-col gap-10 overflow-y-auto mt-14 max-[1000px]:h-[70%] max-[1000px]:mt-12">
   <div class="text-white items-center flex flex-col gap-10">
     <div class="videos gap-10 relative">
       {#each videos as video}
@@ -53,18 +52,15 @@
             <div>
               {#if (parseInt(video[3]) > 100) | (video[1] != "")}
                 <div
-                  class="cardDetails w-[20vw] bg-[#0C0C0C] -z-10 p-4 rounded-b-xl absolute max-[1000px]:relative opacity-0 translate-y-[-100%] group-hover:translate-y-[-10px] group-hover:opacity-100 group-hover:transition-all transition-opacity group-hover:duration-300"
-                >
+                  class="cardDetails w-[20vw] bg-[#0C0C0C] -z-10 p-4 rounded-b-xl absolute max-[1000px]:relative opacity-0 translate-y-[-100%] group-hover:translate-y-[-10px] group-hover:opacity-100 group-hover:transition-all transition-opacity group-hover:duration-300">
                   <div
-                    class="font-bold text-xl absolute pt-1 pb-2 flex border bg-gradient-to-b blur-xl from-[#FF7200] to-[#FF7200] bg-clip-text text-transparent"
-                  >
+                    class="font-bold text-xl absolute pt-1 pb-2 flex border bg-gradient-to-b blur-xl from-[#FF7200] to-[#FF7200] bg-clip-text text-transparent">
                     {#if parseInt(video[3]) > 100}
                       {formatNumberWithCommas(video[3])} views
                     {/if}
                   </div>
                   <div
-                    class="font-bold text-xl relative top-0 pt-1 pb-2 h-auto flex bg-gradient-to-b items-center from-[#FF7200] to-[#FF7200] bg-clip-text text-transparent"
-                  >
+                    class="font-bold text-xl relative top-0 pt-1 pb-2 h-auto flex bg-gradient-to-b items-center from-[#FF7200] to-[#FF7200] bg-clip-text text-transparent">
                     {#if parseInt(video[3]) > 100}
                       {formatNumberWithCommas(video[3])} views
                     {/if}
@@ -80,8 +76,7 @@
             <div>
               {#if video[1] != ""}
                 <div
-                  class="cardDetails bg-[#0C0C0C] p-4 rounded-b-xl absolute max-[1000px]:relative w-[35vw] max-[1000px]:w-[75vw] translate-y-[-10px]"
-                >
+                  class="cardDetails bg-[#0C0C0C] p-4 rounded-b-xl absolute max-[1000px]:relative w-[35vw] max-[1000px]:w-[75vw] translate-y-[-10px]">
                   <p>{video[1]}</p>
                 </div>
               {/if}

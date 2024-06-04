@@ -16,7 +16,7 @@
 
     if (!isLoading) {
       website = link["showReelLink"].match(
-        /(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]/
+        /(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]/,
       );
 
       console.log(website[0]);
@@ -26,19 +26,16 @@
   fetchData();
 </script>
 
-{#if isLoading}
-{:else}
+{#if isLoading}{:else}
   <div
-    class="w-[80vw] h-[80%] text-white items-center justify-center flex flex-col gap-10 mt-14 max-[1000px]:mt-14 max-[1000px]:w-[90px]"
-  >
+    class="w-[80vw] h-[80%] text-white items-center justify-center flex flex-col gap-10 mt-14 max-[1000px]:mt-14 max-[1000px]:w-[90px]">
     {#if website[0] == "www.youtube.com"}
       <div>
         <iframe
           class="video w-[60vw] h-[33.75vw]"
           src={"https://www.youtube-nocookie.com/embed/" +
             link["showReelLink"].match(/[?&]v=([^&]+)/)[1]}
-          allowfullscreen
-        ></iframe>
+          allowfullscreen></iframe>
       </div>
     {/if}
 
@@ -51,8 +48,7 @@
           frameborder="0"
           webkitallowfullscreen
           mozallowfullscreen
-          allowfullscreen
-        ></iframe>
+          allowfullscreen></iframe>
       </div>
     {/if}
   </div>
