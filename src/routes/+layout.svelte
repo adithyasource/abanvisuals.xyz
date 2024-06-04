@@ -2,6 +2,8 @@
   import "../app.css";
 
   import bg from "$lib/public/background.svg";
+
+  let showLongFormMemu = false;
 </script>
 
 <main>
@@ -27,37 +29,71 @@
             class="transition-colors max-[1000px]:w-max border border-[#3A3A3A] border-t-1.5 border-l-0 border-r-0 border-b-0 bg-gradient-to-b from-[#0F0F0F] to-black py-1.5 px-3 rounded-md hover:bg-gradient-to-b hover:from-[#161616] hover:to-[#080808]"
             href="/adscommercials">Ads/Commercial</a>
         </div>
-        <div class="flex flex-col gap-2 group">
-          <a
-            class="group-hover:opacity-100 max-[1000px]:hidden max-[1000px]:group-hover:block max-[1000px]:transition-none max-[1000px]:w-max transition-opacity opacity-0 duration-200 border border-[#3A3A3A] border-t-1.5 border-l-0 border-r-0 border-b-0 bg-gradient-to-b from-[#0F0F0F] to-black py-1.5 px-3 rounded-md hover:bg-gradient-to-b hover:from-[#161616] hover:to-[#080808]"
-            href="/lifestyle"
-            style="z-index: 100">
-            Lifestyle
-          </a>
-          <a
-            class="group-hover:opacity-100 max-[1000px]:hidden max-[1000px]:group-hover:block max-[1000px]:transition-none max-[1000px]:w-max transition-opacity opacity-0 duration-100 border border-[#3A3A3A] border-t-1.5 border-l-0 border-r-0 border-b-0 bg-gradient-to-b from-[#0F0F0F] to-black py-1.5 px-3 rounded-md hover:bg-gradient-to-b hover:from-[#161616] hover:to-[#080808]"
-            href="/finance"
-            style="z-index: 100">
-            Finance
-          </a>
-          <a
-            class="group-hover:opacity-100 max-[1000px]:hidden max-[1000px]:group-hover:block max-[1000px]:transition-none max-[1000px]:w-max transition-opacity opacity-0 duration-100 border border-[#3A3A3A] border-t-1.5 border-l-0 border-r-0 border-b-0 bg-gradient-to-b from-[#0F0F0F] to-black py-1.5 px-3 rounded-md hover:bg-gradient-to-b hover:from-[#161616] hover:to-[#080808]"
-            href="/documentary"
-            style="z-index: 100">
-            Docu
-          </a>
-          <a
-            class="group-hover:opacity-100 max-[1000px]:hidden max-[1000px]:group-hover:block max-[1000px]:transition-none max-[1000px]:w-max transition-opacity opacity-0 duration-100 border border-[#3A3A3A] border-t-1.5 border-l-0 border-r-0 border-b-0 bg-gradient-to-b from-[#0F0F0F] to-black py-1.5 px-3 rounded-md hover:bg-gradient-to-b hover:from-[#161616] hover:to-[#080808]"
-            href="/podcasts"
-            style="z-index: 100">
-            Podcasts
-          </a>
-          <p
+        <!-- svelte-ignore a11y-no-static-element-interactions -->
+        <div
+          class="flex flex-col gap-2"
+          on:mouseleave={() => {
+            showLongFormMemu = false;
+          }}>
+          {#if showLongFormMemu}
+            <!-- svelte-ignore a11y-no-static-element-interactions -->
+            <div class="flex flex-col gap-2 group">
+              <a
+                class="max-[1000px]:w-max border border-[#3A3A3A] border-t-1.5 border-l-0 border-r-0 border-b-0 bg-gradient-to-b from-[#0F0F0F] to-black py-1.5 px-3 rounded-md hover:bg-gradient-to-b hover:from-[#161616] hover:to-[#080808]"
+                href="/lifestyle"
+                style="z-index: 100">
+                Lifestyle
+                <button
+                  on:click={() => {
+                    showLongFormMemu = false;
+                  }}>
+                </button>
+              </a>
+              <a
+                class="max-[1000px]:w-max border border-[#3A3A3A] border-t-1.5 border-l-0 border-r-0 border-b-0 bg-gradient-to-b from-[#0F0F0F] to-black py-1.5 px-3 rounded-md hover:bg-gradient-to-b hover:from-[#161616] hover:to-[#080808]"
+                href="/finance"
+                style="z-index: 100">
+                Finance
+                <button
+                  on:click={() => {
+                    showLongFormMemu = false;
+                  }}></button>
+              </a>
+              <a
+                class="max-[1000px]:w-max border border-[#3A3A3A] border-t-1.5 border-l-0 border-r-0 border-b-0 bg-gradient-to-b from-[#0F0F0F] to-black py-1.5 px-3 rounded-md hover:bg-gradient-to-b hover:from-[#161616] hover:to-[#080808]"
+                href="/documentary"
+                style="z-index: 100"
+                ><button
+                  on:click={() => {
+                    showLongFormMemu = false;
+                  }}>
+                  Docu</button>
+              </a>
+              <a
+                class="max-[1000px]:w-max border border-[#3A3A3A] border-t-1.5 border-l-0 border-r-0 border-b-0 bg-gradient-to-b from-[#0F0F0F] to-black py-1.5 px-3 rounded-md hover:bg-gradient-to-b hover:from-[#161616] hover:to-[#080808]"
+                href="/podcasts"
+                style="z-index: 100"
+                ><button
+                  on:click={() => {
+                    showLongFormMemu = false;
+                  }}>
+                  Podcasts</button>
+              </a>
+            </div>
+          {/if}
+          <button
             class="transition-colors max-[1000px]:w-max cursor-pointer border border-[#3A3A3A] border-t-1.5 border-l-0 border-r-0 border-b-0 bg-gradient-to-b from-[#0F0F0F] to-black py-1.5 px-3 rounded-md hover:bg-gradient-to-b hover:from-[#161616] hover:to-[#080808]"
-            style="z-index: 100">
+            style="z-index: 100"
+            on:click={() => {
+              showLongFormMemu = !showLongFormMemu;
+            }}
+            on:mouseenter={() => {
+              showLongFormMemu = true;
+            }}>
             Long Form
-          </p>
+          </button>
         </div>
+
         <div class="flex flex-col gap-2 group">
           <a
             class="transition-colors max-[1000px]:w-max border border-[#3A3A3A] border-t-1.5 border-l-0 border-r-0 border-b-0 bg-gradient-to-b from-[#0F0F0F] to-black py-1.5 px-3 rounded-md hover:bg-gradient-to-b hover:from-[#161616] hover:to-[#080808]"
