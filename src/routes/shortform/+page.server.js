@@ -16,7 +16,6 @@ export async function load() {
 
     if (website[0] == "www.youtube.com") {
       let videoId = videos[key][0].match(regExp)[1];
-      console.log(videoId);
 
       let youtubeData = await fetch(
         `https://www.googleapis.com/youtube/v3/videos?part=statistics&id=${videoId}&key=${SECRET_YOUTUBE_API}`

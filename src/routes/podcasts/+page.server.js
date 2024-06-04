@@ -1,15 +1,11 @@
 import { SECRET_YOUTUBE_API } from "$env/static/private";
 
 export async function load() {
-  let isLoading = true;
-
   let videosWithViews = {};
 
   let videos = await fetch("https://api.npoint.io/4fedc4e0cd8889361b0c");
 
   videos = await videos.json();
-
-  console.log(videos);
 
   let regExp = /^.*(?:youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=)([^#\&\?]*).*/;
 

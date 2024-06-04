@@ -76,15 +76,4 @@
       scrollbar-width: none; /* Firefox */
     }
   }
-
-  .navBarButton {
-    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0));
-    transform: scale(1);
-    transition: all 0.3s ease;
-  }
-
-  .navBarButton:hover {
-    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.6));
-    transform: scale(1.05);
-  }
 </style>

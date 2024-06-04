@@ -2,7 +2,6 @@
   import { onMount } from "svelte";
 
   export let data;
-  $: console.log(data);
   $: videos = Object.values(data);
   let desktopWindow;
   let windowWidth;
