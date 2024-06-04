@@ -74,9 +74,21 @@
             </div>
           {:else}
             <div>
-              {#if video[1] != ""}
+              {#if (parseInt(video[3]) > 100) | (video[1] != "")}
                 <div
                   class="cardDetails bg-[#0C0C0C] p-4 rounded-b-xl absolute max-[1000px]:relative w-[35vw] max-[1000px]:w-[75vw] translate-y-[-10px]">
+                  <div
+                    class="font-bold text-l absolute pb-2 flex border bg-gradient-to-b blur-xl from-[#FF7200] to-[#FF7200] bg-clip-text text-transparent">
+                    {#if parseInt(video[3]) > 100}
+                      {formatNumberWithCommas(video[3])} views
+                    {/if}
+                  </div>
+                  <div
+                    class="font-bold text-l relative top-0 pb-2 h-auto flex bg-gradient-to-b items-center from-[#FF7200] to-[#FF7200] bg-clip-text text-transparent">
+                    {#if parseInt(video[3]) > 100}
+                      {formatNumberWithCommas(video[3])} views
+                    {/if}
+                  </div>
                   <p>{video[1]}</p>
                 </div>
               {/if}
