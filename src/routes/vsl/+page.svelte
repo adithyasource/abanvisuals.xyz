@@ -1,24 +1,8 @@
 <script>
   import { onMount } from "svelte";
 
-  let videos = [
-    [
-        "https://postedapp.com/index",
-        "description",
-        "https://i.ibb.co/yhRpRZJ/postedapp-com-index.webp"
-    ],
-    [
-        "https://postedapp.com/brands",
-        "",
-        "https://i.ibb.co/54dzK0H/postedapp-com-brands.webp"
-    ],
-    [
-        "https://courses.accelerate-re.com/new-accelerate-page",
-        "description",
-        "https://i.ibb.co/Mpv0LMW/courses-accelerate-com-new-accelerate-page.webp"
-    ]
-  ]
-
+  export let data;
+  $: videos = Object.values(data);
   let desktopWindow;
   let windowWidth;
 
