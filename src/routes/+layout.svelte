@@ -79,6 +79,16 @@
                   }}>
                   Podcasts</button>
               </a>
+              <a
+                class="max-[1000px]:w-max border border-[#3A3A3A] border-t-1.5 border-l-0 border-r-0 border-b-0 bg-gradient-to-b from-[#0F0F0F] to-black py-1.5 px-3 rounded-md hover:bg-gradient-to-b hover:from-[#161616] hover:to-[#080808]"
+                href="/vsl"
+                style="z-index: 100"
+                ><button
+                  on:click={() => {
+                    showLongFormMemu = false;
+                  }}>
+                  VSL</button>
+              </a>
             </div>
           {/if}
           <button
